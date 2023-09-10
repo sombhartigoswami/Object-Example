@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <script>
+//(1) what is  an object? 
+//ans. An object is a stand alone entity ,with properties and type
+
+//(2)print an object
+// var obj= {
+// fname:"anil",
+// lname:"goswami",
+// age:27,
+// city:"hisar"
+
+// }
+// console.log(obj);
+
+
+// (3)print an object property
+// var obj= {
+// fname:"anil",
+// lname:"goswami",
+// age:27,
+// city:"hisar"
+
+// }
+// document.write(obj.lname+"<br>");
+// document.write(obj["city"]);//--this method is also popular
+// console.log(obj.lname);
+
+//(4)place an array inside an object
+// var obj= {
+// fname:"anil",
+// lname:"goswami",
+// age:27,
+// city:"hisar",
+// movies:["hum","dhoom","sarkar"]
+
+// }
+// document.write(obj.movies);
+// document.write("<br>");
+// document.write(obj.movies[2]);
+
+//(5)place a function(method) inside an objects
+// var obj= {
+// fname:"anil",
+// lname:"goswami",
+// age:27,
+// city:"hisar",
+// salary:function(){
+//     return 25000;
+// }
+
+// }
+// document.write(obj.salary());
+
+// (6)place maltiple function inside an object
+// var obj= {
+// fname:"anil",
+// lname:"goswami",
+// age:27,
+// city:"hisar",
+// salary:function(){
+//     return 26000;
+// },
+// fullname:function(){
+//     return this.fname +" "+ this.lname;
+// }
+
+
+// }
+// document.write(obj.salary()+"<br>");
+// document.write(obj.fullname());
+
+//(7)place an  object inside an object
+// var obj= {
+// fname:"anil",
+// lname:"goswami",
+// age:27,
+// city:"hisar",
+// address:{
+//     houseno:23,
+//     galino:25
+// }
+
+// }
+// document.write(obj.address.houseno);
+// console.log(obj.address);
+
+
+
+//(9)array of object
+// var myarray=[
+//     { name:"anil",age:23},
+//     { name:"som",age:21},
+//     {name:"sonia",age:22},
+// ];
+// console.log(myarray);
+// //or print on document
+// for(var a=0; a<myarray.length;a++){
+//     document.write(myarray[a].name+" "+ myarray[a].age);
+//     document.write("<br>");
+// }
+
+//(10)const variable with array and objects
+//as we know const variable can't  redeclare and the value to the const can't reassign
+//(1)array----->
+// const myarray=[10,20,30,40];
+// document.write(myarray+"<br>");
+// myarray[1]=33;
+// document.write(myarray+"<br>");
+
+// //(2)object----->
+// const obj={
+//     name:"anil",
+//     sirname:"goswami",
+//     age:24
+// }
+// document.write(obj.sirname+"<br>");
+// obj.sirname="mundila";
+// document.write(obj.sirname);
+
+//(11)print an object with the  help of of (For in Loop)
+// let obj={
+// name:"anil",
+// age:23,
+// city:"hisar"
+
+// }
+// for( var key in obj){
+//     document.write( key+" :"+obj[key]+"<br>");//print property name and value
+//     // document.write(key+"<br>");// print property name
+// }
+
+//(12)take a symbol ( new data type) and use it inside an object as a key  and print it 
+
+// let mysymbol =Symbol("hello i am symbol");
+// let obj={
+//     name:"anil",
+//     age:23,
+//     location:"hisar",
+//     [mysymbol]:"now i am in object"
+// };
+// document.write(obj[mysymbol]);
+
+
+//(13)merge two objects or combine
+// let obj1={name:"anil",age:21};
+// let obj2={name:"som",age:22};
+// // let obj3= Object.assign( obj1, obj2); //(first method)
+// // console.log(obj3);
+
+// let obj3={...obj1,...obj2};//(2nd method)
+// console.log(obj3);
+
+
+//(14)simply find out keys and values of objects
+// let obj={
+//     name:"anil",
+//     age:23,
+//     city:"hisar"
+// }
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+//console.log(Object.entrise.(obj));
+
+
+// //(15) if we want to check ant property exit in obj or not
+// let obj={
+//      name:"anil",
+//      age:23,
+//     city:"hisar"
+// }
+// console.log(obj.hasOwnProperty("city"));
+// //result always in boolean form
+
+ 
+
+
+
+//---note(1to15eg.are used as object literals)-----
+
+
+//(1) new way of creating object(---singleton----(constructor))
+// var obj= new Object();
+// obj.fname="anil";
+// obj.lname="goswami";
+// obj.age=23;
+// document.write(obj.lname);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
